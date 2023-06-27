@@ -3,6 +3,11 @@
 
 
 ## Notes
+- Spline : Génération d'éléments 3D
+- VECTARY : images vectorielles, 3D, isometric design
+- Naker : images 3D no-code (à tester)
+- ClayGL : 3D open-source (à l'air chiant à utiliser mias open-source)
+- TripDiv : design 3D interactif avec aide css
 
 ## Fonctionnalités
 -> Systm de log avec toutes les personnes de la khlâsse (à voir) <br>
@@ -17,7 +22,7 @@ Sur chaque post on peut 'signaler' et chaque signalement envoie un mail au modo 
 ## Design
 -> Suivant le logo HX1 <br>
 -> Toolbar sur la gauche avec le logo HX1 <br>
--> Couleurs
+-> Couleurs (v1)
 - #ad873d (Couleur du Phoenix) 
 - #5f3dad (Violet -> Complémentaire 1)
 - #3d9ead (Bleu -> Complémentaire 2)
@@ -28,6 +33,21 @@ Sur chaque post on peut 'signaler' et chaque signalement envoie un mail au modo 
 <br>
 -> Responsive :
  - Toolbar en haut avec logo à droite en mini
+<br>
 
+Couleurs v2 :
+- #ad873d (Couleur du Phoenix) 
+- #FCF7FF (Blanc)
+- #323031 (Black +)
+- #3D3B3C (Black -)
+- #D05353 (Call to action)
+
+Interest :
+- #88B7B5 (Bleu)
+- #6969B3 (Violet)
+- #74D3AE (Turquoise)
+
+
+Penser à la paralax, neumorphism, glassmorphism 
 ## Pbs à fixer
 -> System de log, modérer les publications

@@ -159,6 +159,15 @@ svg.arrow {
     display: none;
 }
 
+.block-visible:hover {
+    transform: scale(1.04);
+    transition: .8s ease-in-out;
+}
+
+.block-visible {
+    transition: .4s ease-in-out;
+}
+
 /* 
     -> KEYFRAMES
 */

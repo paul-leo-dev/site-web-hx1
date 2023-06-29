@@ -1,13 +1,25 @@
-let blocks = document.getElementsByClassName("block-visible");
+let add_blocks = document.getElementsByClassName("additional");
 let toggle = document.getElementsByClassName("toggle");
-let classes = .classList;
+let anti_toggle = document.getElementsByClassName("anti_toggle")
 
-toggle[0].addEventListener('click', function() {
-    let result = classes.toggle("c");
-  
-    if (result) {
-      span.textContent = `'c' ajouté ; classList vaut désormais "${classes}".`;
-    } else {
-      span.textContent = `'c' retiré ; classList vaut désormais "${classes}".`;
-    }
-})
+console.log(toggle)
+
+for (let i = 0; i < toggle.length; i++) {
+
+    console.log("Hey")
+
+    toggle[i].addEventListener('click', function() {
+        add_blocks[i].classList.toggle('visible')
+        add_blocks[i].classList.toggle('not-visible')
+    
+        toggle[i].classList.toggle("not-visible")
+    })
+    
+    anti_toggle[i].addEventListener('click', function() {
+        add_blocks[i].classList.toggle('visible')
+        add_blocks[i].classList.toggle('not-visible')
+    
+        toggle[i].classList.toggle("not-visible")
+    })
+    
+}

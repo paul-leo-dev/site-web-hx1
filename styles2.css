@@ -1,0 +1,371 @@
+/*
+-> Charte des couleurs :
+    - Sombre : #1c1919;
+    - Light : Antiquewhite
+    - Vert : #41FF00; 
+    - Gris : #ffffff66;
+
+-> ANIMATION DES BOUTONS :
+    animation: 1s reverse infinite bright;
+
+
+
+    */
+
+    html {
+        --dark: #1c1919;
+        --light:antiquewhite;
+        --gr: #41ff00; 
+        --gry : #ffffff66;
+        --gro : rgba(65, 255, 0, .6);
+    }
+    
+    html {
+        background-color: var(--dark);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--gr);
+    }
+    
+    body {
+        margin: 5em 8em;
+    }
+    
+    .main {
+        /* background-color: red; */
+        margin: 2em 6.5em;
+    }
+    
+    h1.tt {
+        text-align: center;
+        font-size: 4em;
+        font-family: "Space Mono", monospace;
+    }
+    
+    .sst {
+        font-style: italic;
+        font-family: "Anonymous Pro", monospace;
+    }
+    
+    .sst {
+        margin-bottom: 0;
+        color: var(--gry);
+    }
+    
+    .tt {
+        font-family: "Space Mono", monospace;
+        font-size: 2.5em;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .text {
+        color: var(--light);
+        font-family: 'Anonymous Pro', monospace;
+    }
+    
+    .columns {
+        display: flex;
+    }
+    
+    img {
+        max-width: 80% !important;
+    }
+
+    .column.right {
+        max-width: 30%;
+        margin-left: 40%; 
+    }
+    
+    .block-visible {
+        margin: 5em 2em;
+        /* background-color: rebeccapurple !important; */
+        border-radius: 1em;
+        border: var(--gro) solid 1.5px;
+        padding: 1.5em;
+        box-shadow: var(--gro) 1px 1px 5px;
+    }
+    
+    .main h2.tt {
+        font-size: 2em;
+    }
+    
+    .main .btn {
+        transform: scale(.85);
+        display: inline;
+    }
+    
+    .main .categories {
+        display: block;
+        margin-bottom: 8%;
+        margin-top: 4%;
+    }
+    
+    
+    .btn {
+        color: var(--gr);
+        margin: 0px 1% .5% 0px !important;
+        padding: .5em !important;
+        max-width: fit-content;
+        max-height: fit-content;
+        background-color: transparent;
+        border: solid 1px var(--gr);
+        transition: .4s ease-in-out ;
+        font-family: "Anonymous Pro", monospace;
+        text-transform: uppercase;
+    }
+    
+    .btn:hover {
+        color: var(--dark);
+        background-color: var(--gr);    
+        transition: .4s ease-in-out;
+    }
+    
+    .lnk-bx {
+        display: inline-block;
+    }
+    
+    .lnk {
+        color: var(--gr);
+        font-weight: 200;
+        cursor: pointer;
+    
+        animation: 1s reverse infinite bright;    
+        text-decoration: underline var(--gr) 2px;
+        text-underline-offset: 2px;
+    
+        font-family: "Anonymous Pro", monospace;
+        text-transform: uppercase;
+    
+        display: inline-block;
+    }
+    
+    
+    svg.arrow {
+        transform: scale(.85);
+    }
+    
+    .visible {
+        display: block;
+        margin-top: 2em;
+    }
+    
+    .visible .columns {
+        margin: 4em 2em;
+    }
+    
+    .visible .columns .column {
+        width: fit-content;
+        margin: 1em;
+    }
+    
+    .not-visible {
+        display: none;
+    }
+    
+    .block-visible:hover {
+        transform: scale(1.04);
+        transition: .8s ease-in-out;
+    }
+    
+    .block-visible {
+        transition: .4s ease-in-out;
+    }
+
+.block-visible .lnk {
+    margin: 0% 1%;
+}
+
+.lnk a, .lnk a:visited, .lnk a::after {
+    color: var(--gr) !important;
+}
+    
+.container {
+    text-align: center;
+}
+
+.container .list {
+    display: block;
+    margin:1em;
+    border: #41ff00 1px solid;
+    border-radius: .5em;
+    display: flex;
+    transition: .4s ease-in-out;
+    height: 6em;
+    overflow: hidden;
+}
+
+.container:hover .list {
+    filter: blur(5px);
+    opacity: .3;
+}
+
+.container .list:hover {
+    overflow: visible;
+    height: auto;  
+}
+
+.container .list:hover p {
+    padding: 0px 0px 2% 0px;
+}
+
+.container .list:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: .1em .2em .35em var(--gr);
+}
+
+.container .list .content {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: min-content;
+}
+
+.container .list .imgBx {
+    display: inline-block;
+    margin: 0em 3em 0em 0em;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100%;
+}
+
+.container .list .imgBx img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 5px;
+    transform: scale(.8);
+}
+
+.content h4.tt {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    font-size: 1.5em ;
+}
+
+.content p.sst {
+    margin-top: 1% !important;
+}
+
+/* ARBRE GENEALOGIQUE */
+
+
+/*arbre généalogique début*/
+.tree ul {
+	padding-top: 20px; 
+	position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.tree li {
+	float: left; 
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+ 
+/*We will use ::before and ::after to draw the connectors*/
+ 
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid var(--gry);
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid var(--gry);
+}
+ 
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+ 
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+ 
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid var(--gry);
+	border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+}
+ 
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid var(--gry);
+	width: 0; height: 20px;
+}
+ 
+.tree li a{
+	border: 1px solid var(--gry);
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--gr);
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+ 
+	border-radius: 5px;
+ 
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+    border-radius: 1em;
+}
+ 
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: var(--gr); color: var(--dark); border: 1px solid var(--gr);
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  var(--gr);
+}
+ 
+/*arbre généalogique fin*/
+
+
+
+
+
+
+
+
+
+
+    /* 
+        -> KEYFRAMES
+    */
+    
+    @keyframes bright {
+        0% {
+            text-shadow: 2px 2px 6px rgba(64, 255, 0,.75);
+        }
+        100% {
+            text-shadow: 2px 2px 6px rgba(64, 255, 0,1);
+        }
+    }
